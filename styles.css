@@ -2,6 +2,8 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f4f8fc;
   color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -15,7 +17,7 @@ body {
 
 header h1 {
   text-align: center;
-  color: #007bff;
+  color: #004085;
 }
 
 .add-student {
@@ -25,6 +27,8 @@ header h1 {
 }
 
 .add-student label {
+  font-size: 16px;
+  font-weight: bold;
   margin-right: 10px;
 }
 
@@ -39,7 +43,7 @@ header h1 {
 
 .add-student button {
   padding: 10px 20px;
-  background-color: #0056b3;
+  background-color: #004085;
   color: white;
   font-size: 16px;
   border: none;
@@ -48,11 +52,7 @@ header h1 {
 }
 
 .add-student button:hover {
-  background-color: #004085;
-}
-
-.add-student button:focus {
-  outline: 3px solid #ffbf47;
+  background-color: #003366;
 }
 
 .attendance-table table {
@@ -69,7 +69,7 @@ header h1 {
 }
 
 .attendance-table th {
-  background-color: #007bff;
+  background-color: #003366;
   color: white;
 }
 
@@ -82,29 +82,24 @@ header h1 {
 }
 
 .attendance-table td button.presente {
-  background-color: #28a745;
+  background-color: #218838;
   color: white;
 }
 
 .attendance-table td button.ausente {
-  background-color: #dc3545;
+  background-color: #c82333;
   color: white;
 }
 
-.attendance-table td button.eliminar {
-  background-color: #ffc107;
-  color: white;
-}
-
-.attendance-table td button:focus {
-  outline: 3px solid #ffbf47;
+.attendance-table td span {
+  font-weight: bold;
 }
 
 .summary button {
   display: block;
   width: 100%;
   padding: 10px;
-  background-color: #007bff;
+  background-color: #004085;
   color: white;
   font-size: 16px;
   border: none;
@@ -114,9 +109,16 @@ header h1 {
 }
 
 .summary button:hover {
-  background-color: #0056b3;
+  background-color: #003366;
 }
 
-.summary button:focus {
-  outline: 3px solid #ffbf47;
+.attendance-table td button.eliminar {
+  background-color: #ffc107;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.attendance-table td button.eliminar:hover {
+  background-color: #e0a800;
 }

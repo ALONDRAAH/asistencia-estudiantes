@@ -21,13 +21,17 @@
           required
           aria-describedby="student-name-description"
         />
-        <button onclick="agregarEstudiante()" aria-label="Agregar estudiante">
-          Agregar Estudiante
-        </button>
+        <button onclick="agregarEstudiante()">Agregar Estudiante</button>
       </section>
 
       <section class="attendance-table">
-        <table id="attendance-list" role="table">
+        <table
+          id="attendance-list"
+          aria-labelledby="attendance-table-description"
+        >
+          <caption id="attendance-table-description">
+            Lista de asistencia de estudiantes
+          </caption>
           <thead>
             <tr>
               <th scope="col">Nombre del Estudiante</th>
@@ -41,9 +45,7 @@
       </section>
 
       <section class="summary">
-        <button onclick="verResumen()" aria-label="Ver resumen de asistencia">
-          Ver Resumen de Asistencia
-        </button>
+        <button onclick="verResumen()">Ver Resumen de Asistencia</button>
       </section>
     </div>
 
